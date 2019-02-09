@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../App.css";
+import "./App.css";
 import Board from './Board';
 import MovesHistory from './MovesHistory';
 import TurnHeader from './TurnHeader';

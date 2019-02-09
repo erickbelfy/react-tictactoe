@@ -9,4 +9,7 @@ describe('Board', () => {
   it('Should render a <div />', () => {
     expect(wrapper.find('div').length).toEqual(1);
   });
+
+  it('Should validate matrix of the boxes', () => {
+  });
 })
