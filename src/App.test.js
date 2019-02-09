@@ -46,7 +46,8 @@ describe('App', () => {
     expect(wrapper.instance().state.playerOneIsNext).toBe(2 % 2 === 0);
   });
 
-  it('Should validate the winner of a match', () => {
-
+  it('Should validate the calculateWinner method', () => {
+    let {calculateWinner} =  wrapper.instance();
+    expect(calculateWinner(['X', 'X', 'X', null, null, 'O', 'X', null, null])).toBe(true);
   });
 })
