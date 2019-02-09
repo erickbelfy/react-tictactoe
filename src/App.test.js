@@ -32,4 +32,7 @@ describe('App', () => {
     expect(wrapper.instance().state.step).toBe(1);
     expect(wrapper.instance().state.playerOneIsNext).toBe(!prevPlayer);
   });
+
+  it('Should validate goTo event', () => {
+  });
 })
