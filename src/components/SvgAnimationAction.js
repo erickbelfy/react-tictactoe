@@ -13,6 +13,6 @@ const SvgAnimationAction = ({ action }) => {
   return svg ;
 };
 SvgAnimationAction.propTypes = {
-    action: PropTypes.bool.isRequired
+    action: PropTypes.bool
 }
 export default SvgAnimationAction;
