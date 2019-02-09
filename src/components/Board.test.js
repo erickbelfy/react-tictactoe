@@ -2,7 +2,6 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import Board from './Board';
 import BoardRow from './BoardRow';
-import Box from './Box';
 
 
 describe('Board', () => {
