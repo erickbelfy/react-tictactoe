@@ -1,16 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
-
-const BoardRow = ({ children }) => <div className="row">{children}</div>;
-BoardRow.propTypes = {
-  children: PropTypes.array
-}
-
-const Box = ({ value, onClick }) => <button onClick={onClick}>{value}</button>;
-Box.propTypes = {
-  value: PropTypes.string,
-  onClick: PropTypes.func.isRequired
-}
+import BoardRow from './BoardRow';
+import Box from './Box';
 
 const Board = ({ boxes, onClick }) => {
   const CHUNK_SIZE = 3;
