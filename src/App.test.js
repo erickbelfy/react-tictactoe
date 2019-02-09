@@ -8,7 +8,9 @@ import TurnHeader from './TurnHeader';
 
 describe('App', () => {
   let wrapper;
-  beforeEach(() => wrapper = shallow(<app />));
+  beforeEach(() => wrapper = shallow(<TicTacToe />));
+  it('Should render correctly', () => expect(wrapper).toMatchSnapshot());
+
   it('Should render a <div />', () => {
     expect(wrapper.find('div').length).toEqual(1);
   });
