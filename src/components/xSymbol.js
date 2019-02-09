@@ -14,11 +14,11 @@ const XSymbol = ({ isAnimating }) => (
       <g
         id="Artboard-23"
         transform="translate(-16.000000, -21.000000)"
-        stroke="#39BCD4"
+        stroke="#3A98D4"
       >
         <g
           id="Group"
-          class="svg-img"
+          className="svg-img"
           transform="translate(24.000000, 29.000000)"
         >
           <path

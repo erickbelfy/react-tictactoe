@@ -19,125 +19,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <TurnHeader
-          hasWinner={false}
-          isPlayerOne={true}
-        />,
-        <Board
-          boxes={
-            Array [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-            ]
-          }
-          onClick={[Function]}
-        />,
-        <MovesHistory
-          goTo={[Function]}
-          history={
-            Array [
-              Object {
-                "boxes": Array [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                ],
-              },
-            ]
-          }
-        />,
-      ],
-      "className": "container",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "hasWinner": false,
-          "isPlayerOne": true,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "boxes": Array [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-          ],
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "goTo": [Function],
-          "history": Array [
-            Object {
-              "boxes": Array [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-              ],
-            },
-          ],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
+        <h1
+          className="game-title"
+        >
+          Let's play the tic-tac-toe game!
+        </h1>,
+        <div
+          className="container"
+        >
           <TurnHeader
-            hasWinner={false}
             isPlayerOne={true}
-          />,
+          />
           <Board
             boxes={
               Array [
@@ -153,7 +45,7 @@ ShallowWrapper {
               ]
             }
             onClick={[Function]}
-          />,
+          />
           <MovesHistory
             goTo={[Function]}
             history={
@@ -173,54 +65,278 @@ ShallowWrapper {
                 },
               ]
             }
-          />,
+          />
+        </div>,
+      ],
+      "class": "main",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Let's play the tic-tac-toe game!",
+          "className": "game-title",
+        },
+        "ref": null,
+        "rendered": "Let's play the tic-tac-toe game!",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <TurnHeader
+              isPlayerOne={true}
+            />,
+            <Board
+              boxes={
+                Array [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                ]
+              }
+              onClick={[Function]}
+            />,
+            <MovesHistory
+              goTo={[Function]}
+              history={
+                Array [
+                  Object {
+                    "boxes": Array [
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                    ],
+                  },
+                ]
+              }
+            />,
+          ],
+          "className": "container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "isPlayerOne": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "boxes": Array [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+              ],
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "goTo": [Function],
+              "history": Array [
+                Object {
+                  "boxes": Array [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                  ],
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
         ],
-        "className": "container",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="game-title"
+          >
+            Let's play the tic-tac-toe game!
+          </h1>,
+          <div
+            className="container"
+          >
+            <TurnHeader
+              isPlayerOne={true}
+            />
+            <Board
+              boxes={
+                Array [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                ]
+              }
+              onClick={[Function]}
+            />
+            <MovesHistory
+              goTo={[Function]}
+              history={
+                Array [
+                  Object {
+                    "boxes": Array [
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                    ],
+                  },
+                ]
+              }
+            />
+          </div>,
+        ],
+        "class": "main",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "hasWinner": false,
-            "isPlayerOne": true,
+            "children": "Let's play the tic-tac-toe game!",
+            "className": "game-title",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": "Let's play the tic-tac-toe game!",
+          "type": "h1",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "boxes": Array [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+            "children": Array [
+              <TurnHeader
+                isPlayerOne={true}
+              />,
+              <Board
+                boxes={
+                  Array [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                  ]
+                }
+                onClick={[Function]}
+              />,
+              <MovesHistory
+                goTo={[Function]}
+                history={
+                  Array [
+                    Object {
+                      "boxes": Array [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                      ],
+                    },
+                  ]
+                }
+              />,
             ],
-            "onClick": [Function],
+            "className": "container",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "goTo": [Function],
-            "history": Array [
-              Object {
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "isPlayerOne": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
                 "boxes": Array [
                   null,
                   null,
@@ -232,12 +348,40 @@ ShallowWrapper {
                   null,
                   null,
                 ],
+                "onClick": [Function],
               },
-            ],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "goTo": [Function],
+                "history": Array [
+                  Object {
+                    "boxes": Array [
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                      null,
+                    ],
+                  },
+                ],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

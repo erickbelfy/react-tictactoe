@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import Board from './Board';
-import MovesHistory from './MovesHistory';
-import TurnHeader from './TurnHeader';
+import Board from "./Board";
+import MovesHistory from "./MovesHistory";
+import TurnHeader from "./TurnHeader";
 
 class TicTacToe extends Component {
   static PLAYER_ONE_SYMBOL = "X";
@@ -65,13 +65,13 @@ class TicTacToe extends Component {
     const current = history[this.state.step];
     const winner = this.calculateWinner(current.boxes);
     return (
-      <div className="container">
-        <TurnHeader
-          hasWinner={winner}
-          isPlayerOne={this.state.playerOneIsNext}
-        />
-        <Board boxes={current.boxes} onClick={this.handleClick} />
-        <MovesHistory history={history} goTo={this.goTo} />
+      <div class="main">
+        <h1 className="game-title">Let's play the tic-tac-toe game!</h1>
+        <div className="container">
+          <TurnHeader isPlayerOne={this.state.playerOneIsNext} />
+          <Board boxes={current.boxes} onClick={this.handleClick} />
+          <MovesHistory history={history} goTo={this.goTo} />
+        </div>
       </div>
     );
   }

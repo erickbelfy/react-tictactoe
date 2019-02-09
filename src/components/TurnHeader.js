@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-const TurnHeader = ({ hasWinner, isPlayerOne }) => (
+const TurnHeader = ({ isPlayerOne }) => (
   <header className="turn-header">
-    <div className="player-turn">Player X</div>
-    <div className="player-turn">Player Y</div>
+    <div className={isPlayerOne? 'play-turn-1' : 'player-turn'}>Player X</div>
+    <div className={isPlayerOne? 'player-turn' : 'play-turn-2'}>Player O</div>
   </header>
 );
 TurnHeader.propTypes = {
-  hasWinner: PropTypes.bool.isRequired,
   isPlayerOne: PropTypes.bool.isRequired
 }
 export default TurnHeader;

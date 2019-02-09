@@ -12,7 +12,7 @@ describe('App', () => {
   it('Should render correctly', () => expect(wrapper).toMatchSnapshot());
 
   it('Should render a <div />', () => {
-    expect(wrapper.find('div').length).toEqual(1);
+    expect(wrapper.find('div').length).toEqual(2);
   });
 
   it('Should validate the existence of its childs', () => {
@@ -20,7 +20,7 @@ describe('App', () => {
     let {history, playerOneIsNext} = state;
     let [{boxes: boxesProps}] = history;
     expect(wrapper.containsMatchingElement(<Board boxes={boxesProps} onClick={handleClick} />)).toEqual(true);
-    expect(wrapper.containsMatchingElement(<TurnHeader hasWinner={false} isPlayerOne={playerOneIsNext} />)).toEqual(true);
+    expect(wrapper.containsMatchingElement(<TurnHeader isPlayerOne={playerOneIsNext} />)).toEqual(true);
     expect(wrapper.containsMatchingElement(<MovesHistory history={history} goTo={goTo} />)).toEqual(true);
   });
 
