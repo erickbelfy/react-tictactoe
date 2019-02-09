@@ -14,12 +14,22 @@ describe('App', () => {
   it('Should render a <div />', () => {
     expect(wrapper.find('div').length).toEqual(1);
   });
+
   it('Should validate the existence of its childs', () => {
-    let instance =  wrapper.instance();
-    let state = instance.state;
-    let [{boxes: boxesProps}] = state.history;
-    expect(wrapper.containsMatchingElement(<Board boxes={boxesProps} onClick={instance.handleClick} />)).toEqual(true);
-    expect(wrapper.containsMatchingElement(<TurnHeader hasWinner={false} isPlayerOne={state.playerOneIsNext} />)).toEqual(true);
-    expect(wrapper.containsMatchingElement(<MovesHistory history={state.history} goTo={instance.goTo} />)).toEqual(true);
-  })
+    let {goTo, handleClick, state} =  wrapper.instance();
+    let {history, playerOneIsNext} = state;
+    let [{boxes: boxesProps}] = history;
+    expect(wrapper.containsMatchingElement(<Board boxes={boxesProps} onClick={handleClick} />)).toEqual(true);
+    expect(wrapper.containsMatchingElement(<TurnHeader hasWinner={false} isPlayerOne={playerOneIsNext} />)).toEqual(true);
+    expect(wrapper.containsMatchingElement(<MovesHistory history={history} goTo={goTo} />)).toEqual(true);
+  });
+
+  it('Should validate handleClick event', () => {
+    let {handleClick} =  wrapper.instance();
+    let prevPlayer = wrapper.instance().state.playerOneIsNext;
+    handleClick(1);
+    expect(wrapper.instance().state.history.length).toBe(2);
+    expect(wrapper.instance().state.step).toBe(1);
+    expect(wrapper.instance().state.playerOneIsNext).toBe(!prevPlayer);
+  });
 })
