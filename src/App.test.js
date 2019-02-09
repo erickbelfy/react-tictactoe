@@ -15,8 +15,11 @@ describe('App', () => {
     expect(wrapper.find('div').length).toEqual(1);
   });
   it('Should validate the existence of its childs', () => {
-    expect(wrapper.containsMatchingElement(<Board />)).toEqual(true);
-    expect(wrapper.containsMatchingElement(<TurnHeader />)).toEqual(true);
-    expect(wrapper.containsMatchingElement(<MovesHistory />)).toEqual(true);
+    let instance =  wrapper.instance();
+    let state = instance.state;
+    let [{boxes: boxesProps}] = state.history;
+    expect(wrapper.containsMatchingElement(<Board boxes={boxesProps} onClick={instance.handleClick} />)).toEqual(true);
+    expect(wrapper.containsMatchingElement(<TurnHeader hasWinner={false} isPlayerOne={state.playerOneIsNext} />)).toEqual(true);
+    expect(wrapper.containsMatchingElement(<MovesHistory history={state.history} goTo={instance.goTo} />)).toEqual(true);
   })
 })

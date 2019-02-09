@@ -70,7 +70,7 @@ class TicTacToe extends Component {
           hasWinner={winner}
           isPlayerOne={this.state.playerOneIsNext}
         />
-        <Board boxes={current.boxes} onClick={i => this.handleClick(i)} />
+        <Board boxes={current.boxes} onClick={this.handleClick} />
         <MovesHistory history={history} goTo={this.goTo} />
       </div>
     );
