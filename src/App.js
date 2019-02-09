@@ -1,69 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-
-const TurnHeader = ({ hasWinner, isPlayerOne }) => (
-  <header className="turn-header">
-    {hasWinner
-      ? `Winner: ${!isPlayerOne ? "One" : "Two"}`
-      : `Next Player: ${isPlayerOne ? "One" : "Two"}`}
-  </header>
-);
-
-const MovesHistory = ({ history, goTo }) => {
-  const moves = history.map((step, move) => {
-    const desc = move ? "Go to move #" + move : "Go to game start";
-    return (
-      <li key={move}>
-        <button onClick={() => goTo(move)}>{desc}</button>
-      </li>
-    );
-  });
-  return <ol>{moves}</ol>;
-};
-
-const BoardRow = ({ children }) => <div className="row">{children}</div>;
-
-const Box = ({ value, onClick }) => <button onClick={onClick}>{value}</button>;
-
-const Board = ({ boxes, onClick }) => {
-  const CHUNK_SIZE = 3;
-  const generateBoard = () => {
-    let matrix = generateBoxesMatrix(boxes);
-    return renderBoxesOnBoard(matrix);
-  };
-
-  const generateBoxesMatrix = boxes => {
-    return boxes.reduce(
-      (prevBoxes, currentBox, idx, arr) =>
-        !(idx % CHUNK_SIZE)
-          ? prevBoxes.concat([arr.slice(idx, idx + CHUNK_SIZE)])
-          : prevBoxes,
-      []
-    );
-  };
-
-  const renderBoxesOnBoard = matrix => {
-    return matrix.map((row, rowIdx) => {
-      return (
-        <BoardRow key={rowIdx}>
-          {row.map((box, boxIdx) => {
-            return (
-              <Box
-                key={boxIdx}
-                value={box}
-                onClick={() => {
-                  onClick(rowIdx * CHUNK_SIZE + boxIdx);
-                }}
-              />
-            );
-          })}
-        </BoardRow>
-      );
-    });
-  };
-
-  return <div className="board">{generateBoard()}</div>;
-};
+import Board from './Board';
+import MovesHistory from './MovesHistory';
+import TurnHeader from './TurnHeader';
 
 class TicTacToe extends Component {
   static PLAYER_ONE_SYMBOL = "X";
@@ -93,7 +32,7 @@ class TicTacToe extends Component {
         return true;
       }
     }
-    return null;
+    return false;
   };
 
   handleClick = i => {
