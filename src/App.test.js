@@ -45,4 +45,8 @@ describe('App', () => {
     expect(wrapper.instance().state.step).toBe(2);
     expect(wrapper.instance().state.playerOneIsNext).toBe(2 % 2 === 0);
   });
+
+  it('Should validate the winner of a match', () => {
+
+  });
 })
