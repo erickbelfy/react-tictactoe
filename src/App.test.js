@@ -7,11 +7,14 @@ import TurnHeader from './TurnHeader';
 
 
 describe('App', () => {
+  let wrapper;
+  beforeEach(() => wrapper = shallow(<app />));
   it('Should render a <div />', () => {
-    const wrapper = shallow(<TicTacToe />);
     expect(wrapper.find('div').length).toEqual(1);
+  });
+  it('Should validate the existence of its childs', () => {
     expect(wrapper.containsMatchingElement(<Board />)).toEqual(true);
     expect(wrapper.containsMatchingElement(<TurnHeader />)).toEqual(true);
     expect(wrapper.containsMatchingElement(<MovesHistory />)).toEqual(true);
-  });
+  })
 })
