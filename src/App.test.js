@@ -34,5 +34,15 @@ describe('App', () => {
   });
 
   it('Should validate goTo event', () => {
+    let {handleClick, goTo} =  wrapper.instance();
+    handleClick(1);
+    handleClick(2);
+    handleClick(5);
+    goTo(1);
+    expect(wrapper.instance().state.step).toBe(1);
+    expect(wrapper.instance().state.playerOneIsNext).toBe(1 % 2 === 0);
+    goTo(2);
+    expect(wrapper.instance().state.step).toBe(2);
+    expect(wrapper.instance().state.playerOneIsNext).toBe(2 % 2 === 0);
   });
 })
