@@ -60,7 +60,7 @@ ShallowWrapper {
           }
         />,
       ],
-      "className": "tic-tac-toe",
+      "className": "container",
     },
     "ref": null,
     "rendered": Array [
@@ -175,7 +175,7 @@ ShallowWrapper {
             }
           />,
         ],
-        "className": "tic-tac-toe",
+        "className": "container",
       },
       "ref": null,
       "rendered": Array [

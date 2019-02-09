@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 const TurnHeader = ({ hasWinner, isPlayerOne }) => (
   <header className="turn-header">
-    {hasWinner
-      ? `Winner: ${!isPlayerOne ? "One" : "Two"}`
-      : `Next Player: ${isPlayerOne ? "One" : "Two"}`}
+    <div className="player-turn">Player X</div>
+    <div className="player-turn">Player Y</div>
   </header>
 );
 TurnHeader.propTypes = {

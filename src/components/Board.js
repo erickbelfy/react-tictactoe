@@ -40,7 +40,7 @@ const Board = ({ boxes, onClick }) => {
     });
   };
 
-  return <div className="board">{generateBoard()}</div>;
+  return <div className="game-board">{generateBoard()}</div>;
 };
 Board.propTypes = {
   boxes: PropTypes.array.isRequired,

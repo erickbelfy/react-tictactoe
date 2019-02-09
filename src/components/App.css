@@ -9,7 +9,127 @@
   align-self: center;
 }
 
-.tic-tac-toe {
+.turn-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.turn-header .player-turn {
+    color: #989898;
+    border-bottom: 5px solid #eee;
+    stroke: #989898;
+}
+
+
+.game-board {
   display: flex;
   flex-direction: column;
+  width: 305px;
+  height: 305px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+
+.row button {
+  border: 0;
+  color: transparent;
+}
+
+.row .square {
+  font-size: 30px;
+  background-color: #fff;
+  box-shadow: none;
+  width: 100px;
+  height: 100px;
+  outline: none;
+  cursor: pointer;
+}
+
+.row .square:focus {
+	outline: none
+}
+
+.square .img {
+  width: 50%;
+  opacity: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.square .hide {
+  display: none;
+}
+
+.square .appear {
+  display: block!important;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: width .2s,opacity .2s;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,.1));
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+}
+
+.draw,
+.draw1 {
+	-webkit-animation: dash 1s linear forwards;
+	animation: dash 1s linear forwards
+}
+
+.draw1 {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
+}
+
+.square .img .svg-img {
+  stroke-width: 15px;
+  stroke-linecap: round;
+}
+
+.row:not(:last-child) button:not(:last-child) {
+  border-right: 1px solid #c9e1f4;
+  border-bottom: 1px solid #c9e1f4;
+  border-left: none;
+  border-top: none;
+}
+
+.row:not(:last-child) button:last-child {
+  border-right: none;
+  border-bottom: 1px solid #c9e1f4;
+  border-left: none;
+  border-top: none;
+}
+
+.row:last-child button:not(:last-child) {
+  border-right: 1px solid #c9e1f4;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+}
+
+@-webkit-keyframes dash {
+	to {
+		stroke-dashoffset: 0
+	}
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0
+	}
+}
+
+@-webkit-keyframes delay {
+	50% {
+		stroke-dashoffset: 0
+	}
+}
+
+@keyframes delay {
+	50% {
+		stroke-dashoffset: 0
+	}
 }
