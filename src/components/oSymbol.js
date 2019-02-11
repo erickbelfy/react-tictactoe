@@ -14,7 +14,7 @@ const OSymbol = ({ isAnimating }) => (
           <use fill="black" filter="url(#filter-2)" />
           <circle
             className={`svg-img ${isAnimating ? "draw" : ""}`}
-            stroke="#79CADC"
+            stroke="#F5B658"
             cx="41"
             cy="71"
             r="27"
