@@ -1,6 +1,8 @@
 # ReactJs tic-tac-toe
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-![tic-tac-toe board](./board.png "Board")
+
+[tic-tac-toe board](./board.png "Board")
 
 ## Setup
 
