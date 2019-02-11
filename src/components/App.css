@@ -38,7 +38,7 @@
 box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
 }
 
-.container .undo-button {
+.container .settings-buttons {
   background-color: #fff;
   text-decoration: none;
   box-shadow: none;
@@ -51,12 +51,19 @@ box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   position: absolute;
-  top: -1px;
-  right: -50px;
   border-color: #B7E5EE;
+  right: -50px;
 }
 
-.undo-button.disabled {
+.settings-buttons.undo{
+  top: -1px;
+}
+
+.settings-buttons.reset-game{
+  top: 49px;
+}
+
+.settings-buttons.disabled {
   background-color: #456585;
   cursor: not-allowed;
 }

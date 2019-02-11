@@ -6,7 +6,7 @@ const MovesHistory = ({ step, goTo }) => {
     <button
       title="undo movement"
       disabled={step <= 0 ? "disabled" : false}
-      className={`${step <= 0 ? "disabled" : ""} undo-button`}
+      className={`${step <= 0 ? "disabled" : ""} settings-buttons undo`}
       onClick={() => goTo(step - 1)}
     >
       <img alt="Undo movement"  src="https://img.icons8.com/ios-glyphs/24/B7E5EE/undo.png" />

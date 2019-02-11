@@ -50,6 +50,9 @@ ShallowWrapper {
             goTo={[Function]}
             step={0}
           />
+          <ResetGame
+            goTo={[Function]}
+          />
         </div>,
       ],
       "className": "main",
@@ -96,6 +99,9 @@ ShallowWrapper {
             <MovesHistory
               goTo={[Function]}
               step={0}
+            />,
+            <ResetGame
+              goTo={[Function]}
             />,
           ],
           "className": "container",
@@ -147,6 +153,17 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "goTo": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
         ],
         "type": "div",
       },
@@ -190,6 +207,9 @@ ShallowWrapper {
             <MovesHistory
               goTo={[Function]}
               step={0}
+            />
+            <ResetGame
+              goTo={[Function]}
             />
           </div>,
         ],
@@ -238,6 +258,9 @@ ShallowWrapper {
                 goTo={[Function]}
                 step={0}
               />,
+              <ResetGame
+                goTo={[Function]}
+              />,
             ],
             "className": "container",
           },
@@ -283,6 +306,17 @@ ShallowWrapper {
               "props": Object {
                 "goTo": [Function],
                 "step": 0,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "goTo": [Function],
               },
               "ref": null,
               "rendered": null,

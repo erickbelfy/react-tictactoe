@@ -3,6 +3,7 @@ import "./App.css";
 import Board from "./Board";
 import MovesHistory from "./MovesHistory";
 import TurnHeader from "./TurnHeader";
+import ResetGame from "./ResetGame";
 
 class TicTacToe extends Component {
   static PLAYER_ONE_SYMBOL = "X";
@@ -71,6 +72,7 @@ class TicTacToe extends Component {
           <TurnHeader isPlayerOne={this.state.playerOneIsNext} />
           <Board boxes={current.boxes} onClick={this.handleClick} />
           <MovesHistory step={this.state.step} goTo={this.goTo} />
+          <ResetGame goTo={this.goTo} />
         </div>
       </div>
     );
