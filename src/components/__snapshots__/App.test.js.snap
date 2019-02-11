@@ -27,6 +27,11 @@ ShallowWrapper {
         <div
           className="container"
         >
+          <ResultModal
+            gameResult={null}
+            goTo={[Function]}
+            isPlayerOne={false}
+          />
           <TurnHeader
             isPlayerOne={true}
           />
@@ -77,6 +82,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <ResultModal
+              gameResult={null}
+              goTo={[Function]}
+              isPlayerOne={false}
+            />,
             <TurnHeader
               isPlayerOne={true}
             />,
@@ -108,6 +118,19 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "gameResult": null,
+              "goTo": [Function],
+              "isPlayerOne": false,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -185,6 +208,11 @@ ShallowWrapper {
           <div
             className="container"
           >
+            <ResultModal
+              gameResult={null}
+              goTo={[Function]}
+              isPlayerOne={false}
+            />
             <TurnHeader
               isPlayerOne={true}
             />
@@ -235,6 +263,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <ResultModal
+                gameResult={null}
+                goTo={[Function]}
+                isPlayerOne={false}
+              />,
               <TurnHeader
                 isPlayerOne={true}
               />,
@@ -266,6 +299,19 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "gameResult": null,
+                "goTo": [Function],
+                "isPlayerOne": false,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,

@@ -15,9 +15,7 @@ const ResultModal = ({ gameResult, isPlayerOne, goTo }) => (
       <span className="win-msg">
         Player
         <i
-          className={`symbol-feedback ${
-            isPlayerOne === PLAYER_ONE_SYMBOL ? "x-symbol" : "o-symbol"
-          }`}
+          className={`symbol-feedback ${isPlayerOne ? "x-symbol" : "o-symbol"}`}
         >
           {isPlayerOne ? PLAYER_ONE_SYMBOL : PLAYER_TWO_SYMBOL}
         </i>

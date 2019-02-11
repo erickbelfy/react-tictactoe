@@ -65,14 +65,14 @@ class TicTacToe extends Component {
 
   render() {
     const history = this.state.history;
-    const {boxes: boxes} = history[this.state.step];
+    const {boxes} = history[this.state.step];
     const winner = this.calculateWinner(boxes);
     const gameResult = winner ? 'win': boxes.some(entry => entry === null) ? null : 'draw';
     return (
       <div className="main">
         <h1 className="game-title">Let's play the tic-tac-toe game!</h1>
         <div className="container">
-          <ResultModal goTo={this.goTo} player={this.state.playerOneIsNext} gameResult={gameResult} />
+          <ResultModal goTo={this.goTo} isPlayerOne={!this.state.playerOneIsNext} gameResult={gameResult} />
           <TurnHeader isPlayerOne={this.state.playerOneIsNext} />
           <Board boxes={boxes} onClick={this.handleClick} />
           <MovesHistory step={this.state.step} goTo={this.goTo} />
