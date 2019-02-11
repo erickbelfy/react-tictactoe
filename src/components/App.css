@@ -38,6 +38,62 @@
 box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
 }
 
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:hsla(0,0%,100%,.95);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: -1;
+}
+.modal.win {
+  opacity: 1!important;
+  z-index: 5!important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+.modal .win-img {
+  width: 35%;
+}
+
+.modal .win-msg {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 30px;
+  color: #4c6986;
+  padding-top: 30px;
+}
+
+.modal .restart-game {
+  display: block;
+  clear: both;
+  margin-top: 20px;
+  color: #4c6986;
+  font-size: 20px;
+  font-family: Open Sans;
+  border: 2px solid #4c6986;
+  padding: 20px 35px;
+  background-color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.modal .restart-game:hover {
+  background-color: #4c6986;
+  color: white;
+}
+
 .container .settings-buttons {
   background-color: #fff;
   text-decoration: none;
@@ -92,6 +148,19 @@ box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
 	color: #3A98D4;
 	border-bottom: 5px solid #3A98D4;
 	stroke: #3A98D4;
+}
+
+.symbol-feedback {
+  margin: 0 10px 0 10px; 
+}
+
+.o-symbol {
+	color: #3A98D4;
+	stroke: #3A98D4;
+}
+.x-symbol {
+	color: #79CADC;
+	stroke: #79CADC;
 }
 
 .play-turn-2 {

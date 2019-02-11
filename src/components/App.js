@@ -4,10 +4,12 @@ import Board from "./Board";
 import MovesHistory from "./MovesHistory";
 import TurnHeader from "./TurnHeader";
 import ResetGame from "./ResetGame";
+import ResultModal from "./ResultModal";
 
+
+export const PLAYER_ONE_SYMBOL = "X";
+export const PLAYER_TWO_SYMBOL = "O";
 class TicTacToe extends Component {
-  static PLAYER_ONE_SYMBOL = "X";
-  static PLAYER_TWO_SYMBOL = "O";
   static BOARD_ARRAY_LENGTH = 9;
 
   state = {
@@ -45,8 +47,8 @@ class TicTacToe extends Component {
       return;
     }
     boxes[i] = this.state.playerOneIsNext
-      ? TicTacToe.PLAYER_ONE_SYMBOL
-      : TicTacToe.PLAYER_TWO_SYMBOL;
+      ? PLAYER_ONE_SYMBOL
+      : PLAYER_TWO_SYMBOL;
     this.setState({
       history: history.concat([{ boxes }]),
       step: history.length,
@@ -69,6 +71,7 @@ class TicTacToe extends Component {
       <div className="main">
         <h1 className="game-title">Let's play the tic-tac-toe game!</h1>
         <div className="container">
+          <ResultModal goTo={this.goTo} player={PLAYER_ONE_SYMBOL} gameResult='win' />
           <TurnHeader isPlayerOne={this.state.playerOneIsNext} />
           <Board boxes={current.boxes} onClick={this.handleClick} />
           <MovesHistory step={this.state.step} goTo={this.goTo} />

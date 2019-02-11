@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import TicTacToe from './App';
+import {PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL} from './App';
 import BoardRow from "./BoardRow";
 import Box from "./Box";
 
@@ -10,9 +10,9 @@ describe("BoardRow", () => {
     () =>
       (wrapper = shallow(
         <BoardRow>
-          <Box onClick={jest.fn()} value={TicTacToe.PLAYER_ONE_SYMBOL} />
-          <Box onClick={jest.fn()} value={TicTacToe.PLAYER_TWO_SYMBOL}/>
-          <Box onClick={jest.fn()} value={TicTacToe.PLAYER_ONE_SYMBOL} />
+          <Box onClick={jest.fn()} value={PLAYER_ONE_SYMBOL} />
+          <Box onClick={jest.fn()} value={PLAYER_TWO_SYMBOL}/>
+          <Box onClick={jest.fn()} value={PLAYER_ONE_SYMBOL} />
         </BoardRow>
       ))
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import TicTacToe from './App';
+import TicTacToe, { PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL } from './App';
 import Board from './Board';
 import MovesHistory from './MovesHistory';
 import TurnHeader from './TurnHeader';
@@ -48,6 +48,6 @@ describe('App', () => {
 
   it('Should validate the calculateWinner method', () => {
     let {calculateWinner} =  wrapper.instance();
-    expect(calculateWinner(['X', 'X', 'X', null, null, 'O', 'X', null, null])).toBe(true);
+    expect(calculateWinner([PLAYER_ONE_SYMBOL, PLAYER_ONE_SYMBOL, PLAYER_ONE_SYMBOL, null, null, PLAYER_TWO_SYMBOL, PLAYER_TWO_SYMBOL, null, null])).toBe(true);
   });
 })
