@@ -14,4 +14,9 @@ describe("ResultModal", () => {
   it("Should display player one is winner", () => {
       expect(wrapper.find('.win-msg .x-symbol')).toHaveLength(1);
   });
+
+  it("Should display a draw result", () => {
+      wrapper.setProps({gameResult: 'Draw'})
+      expect(wrapper.find('.win-msg.draw')).toHaveLength(1);
+  });
 });

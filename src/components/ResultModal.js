@@ -22,7 +22,7 @@ const ResultModal = ({ gameResult, isPlayerOne, goTo }) => (
         Wins!
       </span>
     ) : (
-      <span className="win-msg">It's a Draw!</span>
+      <span className="win-msg draw">It's a Draw!</span>
     )}
     <ResetGame goTo={goTo} isEndGame={true} />
   </div>
