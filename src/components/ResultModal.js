@@ -7,8 +7,8 @@ const ResultModal = ({ gameResult, isPlayerOne, goTo }) => (
   <div className={`modal ${gameResult !== null ? "win" : ""}`}>
     <img
       className="win-img"
-      src="http://yi-nie.com/tic-tac-toe/img/win-img.png"
-      alt="the winner is"
+      src={gameResult === 'win' ? "http://yi-nie.com/tic-tac-toe/img/win-img.png": "https://img.icons8.com/ios/145/456585/scales.png"}
+      alt={gameResult === 'win' ? "the winner is" : 'Draw' }
     />
 
     {gameResult === "win" ? (

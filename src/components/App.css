@@ -159,18 +159,18 @@ box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
 	stroke: #3A98D4;
 }
 .o-symbol {
-	color: #79CADC;
-	stroke: #79CADC;
+	color: #F5B658;
+	stroke: #F5B658;
 }
 
 .play-turn-2 {
 	padding-bottom: 10px;
-	color: #79CADC;
+	color: #f5b658;
 	font-family: Open Sans;
 	font-size: 20px;
 	width: 50%;
-	border-bottom: 5px solid #79CADC;
-	stroke: #79CADC
+	border-bottom: 5px solid #f5b658;
+	stroke: #f5b658
 }
 
 .game-board {
