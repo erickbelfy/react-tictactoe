@@ -29,6 +29,12 @@
 
 .container {
   width: 305px;
+  padding: 20px 30px;
+  border: 1px solid #B7E5EE;
+  margin-bottom: 50px;
+  -webkit-box-shadow: -2px 46px 151px -30px rgba(183,229,238,1);
+  -moz-box-shadow: -2px 46px 151px -30px rgba(183,229,238,1);
+  box-shadow: -2px 46px 151px -30px rgba(183,229,238,1);
 }
 
 .turn-header {
