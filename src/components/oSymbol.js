@@ -8,8 +8,6 @@ const OSymbol = ({ isAnimating }) => (
     viewBox="0 0 86 88"
     version="1.1"
   >
-    <title>Oval 5</title>
-    <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" fill="none">
       <g id="Artboard-21" transform="translate(0.000000, -26.000000)">
         <g id="Oval-5">
