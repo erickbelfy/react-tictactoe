@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ResetGame from "./ResetGame";
-import { PLAYER_ONE_SYMBOL } from "./App";
+import { PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL } from "./App";
 
-const ResultModal = ({ gameResult, player, goTo }) => (
+const ResultModal = ({ gameResult, isPlayerOne, goTo }) => (
   <div className={`modal ${gameResult !== null ? "win" : ""}`}>
     <img
       className="win-img"
@@ -14,8 +14,14 @@ const ResultModal = ({ gameResult, player, goTo }) => (
     {gameResult === "win" ? (
       <span className="win-msg">
         Player
-        <i className={`symbol-feedback ${player === PLAYER_ONE_SYMBOL ? "x-symbol" : "o-symbol"}` }>{player}</i>
-         Wins!
+        <i
+          className={`symbol-feedback ${
+            isPlayerOne === PLAYER_ONE_SYMBOL ? "x-symbol" : "o-symbol"
+          }`}
+        >
+          {isPlayerOne ? PLAYER_ONE_SYMBOL : PLAYER_TWO_SYMBOL}
+        </i>
+        Wins!
       </span>
     ) : (
       <span className="win-msg">It's a Draw!</span>
@@ -25,7 +31,7 @@ const ResultModal = ({ gameResult, player, goTo }) => (
 );
 ResultModal.propTypes = {
   gameResult: PropTypes.string,
-  result: PropTypes.string,
+  isPlayerOne: PropTypes.bool,
   goTo: PropTypes.func
 };
 

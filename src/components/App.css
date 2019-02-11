@@ -154,11 +154,11 @@ box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
   margin: 0 10px 0 10px; 
 }
 
-.o-symbol {
+.x-symbol {
 	color: #3A98D4;
 	stroke: #3A98D4;
 }
-.x-symbol {
+.o-symbol {
 	color: #79CADC;
 	stroke: #79CADC;
 }
