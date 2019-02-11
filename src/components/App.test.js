@@ -17,11 +17,11 @@ describe('App', () => {
 
   it('Should validate the existence of its childs', () => {
     let {goTo, handleClick, state} =  wrapper.instance();
-    let {history, playerOneIsNext} = state;
+    let {history, step, playerOneIsNext} = state;
     let [{boxes: boxesProps}] = history;
     expect(wrapper.containsMatchingElement(<Board boxes={boxesProps} onClick={handleClick} />)).toEqual(true);
     expect(wrapper.containsMatchingElement(<TurnHeader isPlayerOne={playerOneIsNext} />)).toEqual(true);
-    expect(wrapper.containsMatchingElement(<MovesHistory history={history} goTo={goTo} />)).toEqual(true);
+    expect(wrapper.containsMatchingElement(<MovesHistory step={step} goTo={goTo} />)).toEqual(true);
   });
 
   it('Should validate handleClick event', () => {

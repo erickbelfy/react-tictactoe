@@ -48,27 +48,11 @@ ShallowWrapper {
           />
           <MovesHistory
             goTo={[Function]}
-            history={
-              Array [
-                Object {
-                  "boxes": Array [
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                  ],
-                },
-              ]
-            }
+            step={0}
           />
         </div>,
       ],
-      "class": "main",
+      "className": "main",
     },
     "ref": null,
     "rendered": Array [
@@ -111,23 +95,7 @@ ShallowWrapper {
             />,
             <MovesHistory
               goTo={[Function]}
-              history={
-                Array [
-                  Object {
-                    "boxes": Array [
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                    ],
-                  },
-                ]
-              }
+              step={0}
             />,
           ],
           "className": "container",
@@ -173,21 +141,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "goTo": [Function],
-              "history": Array [
-                Object {
-                  "boxes": Array [
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                  ],
-                },
-              ],
+              "step": 0,
             },
             "ref": null,
             "rendered": null,
@@ -235,27 +189,11 @@ ShallowWrapper {
             />
             <MovesHistory
               goTo={[Function]}
-              history={
-                Array [
-                  Object {
-                    "boxes": Array [
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                    ],
-                  },
-                ]
-              }
+              step={0}
             />
           </div>,
         ],
-        "class": "main",
+        "className": "main",
       },
       "ref": null,
       "rendered": Array [
@@ -298,23 +236,7 @@ ShallowWrapper {
               />,
               <MovesHistory
                 goTo={[Function]}
-                history={
-                  Array [
-                    Object {
-                      "boxes": Array [
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null,
-                      ],
-                    },
-                  ]
-                }
+                step={0}
               />,
             ],
             "className": "container",
@@ -360,21 +282,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "goTo": [Function],
-                "history": Array [
-                  Object {
-                    "boxes": Array [
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                      null,
-                    ],
-                  },
-                ],
+                "step": 0,
               },
               "ref": null,
               "rendered": null,

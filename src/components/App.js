@@ -65,12 +65,12 @@ class TicTacToe extends Component {
     const current = history[this.state.step];
     const winner = this.calculateWinner(current.boxes);
     return (
-      <div class="main">
+      <div className="main">
         <h1 className="game-title">Let's play the tic-tac-toe game!</h1>
         <div className="container">
           <TurnHeader isPlayerOne={this.state.playerOneIsNext} />
           <Board boxes={current.boxes} onClick={this.handleClick} />
-          <MovesHistory history={history} goTo={this.goTo} />
+          <MovesHistory step={this.state.step} goTo={this.goTo} />
         </div>
       </div>
     );

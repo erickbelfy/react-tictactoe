@@ -1,13 +1,22 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const MovesHistory = ({ history, goTo }) => {
-  return <button onClick={() => goTo()}>undo</button>;
+const MovesHistory = ({ step, goTo }) => {
+  return (
+    <button
+      title="undo movement"
+      disabled={step <= 0 ? "disabled" : false}
+      className={`${step <= 0 ? "disabled" : ""} undo-button`}
+      onClick={() => goTo(step - 1)}
+    >
+      <img alt="Undo movement"  src="https://img.icons8.com/ios-glyphs/24/B7E5EE/undo.png" />
+    </button>
+  );
 };
 
 MovesHistory.propTypes = {
-  history: PropTypes.array.isRequired,
+  step: PropTypes.number.isRequired,
   goTo: PropTypes.func.isRequired
-}
+};
 
 export default MovesHistory;

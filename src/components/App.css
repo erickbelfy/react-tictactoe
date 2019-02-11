@@ -28,13 +28,37 @@
 }
 
 .container {
+  position: relative;
   width: 305px;
   padding: 20px 30px;
   border: 1px solid #B7E5EE;
   margin-bottom: 50px;
-  -webkit-box-shadow: -2px 46px 151px -30px rgba(183,229,238,1);
-  -moz-box-shadow: -2px 46px 151px -30px rgba(183,229,238,1);
-  box-shadow: -2px 46px 151px -30px rgba(183,229,238,1);
+  -webkit-box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
+-moz-box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
+box-shadow: -2px 35px 208px -29px rgba(183,229,238,1);
+}
+
+.container .undo-button {
+  background-color: #fff;
+  text-decoration: none;
+  box-shadow: none;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  top: -1px;
+  right: -50px;
+  border-color: #B7E5EE;
+}
+
+.undo-button.disabled {
+  background-color: #456585;
+  cursor: not-allowed;
 }
 
 .turn-header {
@@ -123,22 +147,6 @@
   -webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,.1));
 }
 
-.square .svg-img {
-  stroke-width: 15px;
-  stroke-linecap: round;
-}
-
-.draw,
-.draw1 {
-	-webkit-animation: dash 1s linear forwards;
-	animation: dash 1s linear forwards
-}
-
-.draw1 {
-	-webkit-animation-delay: .2s;
-	animation-delay: .2s
-}
-
 .row:not(:last-child) button:not(:last-child) {
   border-right: 1px solid #c9e1f4;
   border-bottom: 1px solid #c9e1f4;
@@ -158,6 +166,22 @@
   border-bottom: none;
   border-left: none;
   border-top: none;
+}
+
+.square .svg-img {
+  stroke-width: 15px;
+  stroke-linecap: round;
+}
+
+.draw,
+.draw1 {
+	-webkit-animation: dash 1s linear forwards;
+	animation: dash 1s linear forwards
+}
+
+.draw1 {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
 }
 
 @-webkit-keyframes dash {
