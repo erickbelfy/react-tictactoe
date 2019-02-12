@@ -1,9 +1,9 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import TicTacToe, { PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL } from './App';
-import Board from './Board';
-import MovesHistory from './MovesHistory';
-import TurnHeader from './TurnHeader';
+import TicTacToe, { PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL } from '.';
+import Board from '../ Board';
+import MovesHistory from '../MoveHistory';
+import TurnHeader from '../TurnHeader';
 
 
 describe('App', () => {

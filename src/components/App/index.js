@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./App.css";
-import Board from "./Board";
-import MovesHistory from "./MovesHistory";
-import TurnHeader from "./TurnHeader";
-import ResetGame from "./ResetGame";
-import ResultModal from "./ResultModal";
+import "../App.css";
+import Board from "../ Board";
+import MovesHistory from "../MoveHistory";
+import TurnHeader from "../TurnHeader";
+import ResetGame from "../ResetGame";
+import ResultModal from "../ResultModal";
 
 
 export const PLAYER_ONE_SYMBOL = "X";

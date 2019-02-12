@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SvgAnimationAction from './SvgAnimationAction';
+import SvgAnimationAction from '../SvgAnimationAction';
 
 const Box = ({ value, onClick }) => (
   <button className="square" onClick={onClick}>

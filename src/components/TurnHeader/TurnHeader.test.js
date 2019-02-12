@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import TurnHeader from "./TurnHeader";
+import TurnHeader from ".";
 
 describe("TurnHeader", () => {
   let wrapper;

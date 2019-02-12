@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ResetGame from "./ResetGame";
-import { PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL } from "./App";
+import ResetGame from "../ResetGame";
+import { PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL } from "../App";
 
 const ResultModal = ({ gameResult, isPlayerOne, goTo }) => (
   <div className={`modal ${gameResult !== null ? "win" : ""}`}>
