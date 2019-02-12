@@ -1,8 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
-import {PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL} from './App';
-import BoardRow from "./BoardRow";
-import Box from "./Box";
+import {PLAYER_ONE_SYMBOL, PLAYER_TWO_SYMBOL} from '../App';
+import BoardRow from ".";
+import Box from "../Box";
 
 describe("BoardRow", () => {
   let wrapper;

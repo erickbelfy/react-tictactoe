@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import BoardRow from './BoardRow';
-import Box from './Box';
+import BoardRow from '../BoardRow';
+import Box from '../Box';
 
 const Board = ({ boxes, onClick }) => {
   const CHUNK_SIZE = 3;

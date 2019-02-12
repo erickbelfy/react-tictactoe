@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import ResultModal from "./ResultModal";
+import ResultModal from ".";
 
 describe("ResultModal", () => {
   let wrapper;

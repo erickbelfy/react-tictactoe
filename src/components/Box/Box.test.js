@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Box from "./Box";
+import Box from ".";
 
 describe("Box", () => {
   let wrapper;
